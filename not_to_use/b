@@ -1,0 +1,20 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<form method="POST" enctype="multipart/form-data" action="/save" id="myForm">
+    <input type="hidden" name="img_val" id="img_val" value="" />
+</form>
+
+<div id="more">
+<h1> hello </h1>
+<button onclick="take()"> take </button>
+</div>
+
+<script>
+window.take = function() {
+  html2canvas(document.getElementById("more"), {
+    onrendered: function (canvas) {
+      document.getElementById('img_val').value = canvas.toDataURL("image/png");
+      document.getElementById("myForm").submit();
+    }
+  })
+}
+</script>

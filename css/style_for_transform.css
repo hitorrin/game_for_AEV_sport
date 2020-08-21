@@ -1,0 +1,47 @@
+
+
+.res_wrap
+{
+  position: relative;
+}	
+.ui-wrapper {
+	overflow:   visible !important;}
+	
+.ui-resizable-handle {
+	background:    #f5dc58;
+	border:        1px solid #FFF;
+	
+	z-index:    2;}
+	
+.ui-rotatable-handle {
+	background:    #f5dc58;
+	border:        1px solid #FFF;
+	border-radius: 5px;
+		-moz-border-radius:    5px;
+		-o-border-radius:      5px;
+		-webkit-border-radius: 5px;
+	cursor:        pointer;
+	
+	height:        10px;
+	left:          50%;
+	margin:        0 0 0 -5px;
+	position:      absolute;
+	top:           -5px;
+	width:         10px;}
+	
+.ui-rotatable-handle.clone {
+	visibility:  hidden;}
+  
+/*.drag_wrap{
+	width: 60px; 
+	height: 60px;
+}
+
+.down > .drag_wrap{
+	width: 100px;
+	height: 140px;
+}
+.ob > .drag_wrap{
+width: 400px;
+height: 282.4px;
+}*/
