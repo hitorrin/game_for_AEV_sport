@@ -36,7 +36,7 @@
 }
 
 .croppie-container .cr-resizer {
-  z-index: 2;
+  z-index: 2;+
   box-shadow: none;
   pointer-events: none;
 }

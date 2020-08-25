@@ -1,3 +1,8 @@
+body
+{
+  background-color: '#262626';
+}
+
  .label {
       cursor: pointer;
     }
@@ -22,6 +27,7 @@
 text-decoration:none; text-align:center; 
  padding:11px 32px; 
  border:none; 
+
   
  font:16px "Courier New", Courier, monospace; 
  font-weight:bold; 
@@ -58,9 +64,9 @@ text-decoration:none; text-align:center;
  }
     
 .dropdown {
-    position: relative;
+    position: absolute;
     display: inline-block;
-}
+  }
 .dropdown-child {
 	z-index: 80;
 	position:absolute;
@@ -85,6 +91,9 @@ text-decoration:none; text-align:center;
     z-index: 4;
      color:white;
 }
+ html { overflow:  hidden; }
+   
+
 .right{
 margin-top: 20px;
 float: right;
@@ -107,11 +116,12 @@ margin-right: 0;}
 }
 
 .elems{
+  /*overflow: scroll;*/
  visibility: hidden;
  position: absolute;
   z-index: 1;
   left:43%;
-  top:12%;
+  top:5%;
   width: 440px;
   background-color: #828282;
   margin:10px;
@@ -123,10 +133,7 @@ margin-right: 0;}
   display: inline-block;
 
 }
-.down{
-  top:20%;
 
-}
 
 #result{
   font-size: 20px;
@@ -137,7 +144,15 @@ margin-right: 0;}
   height:25px;
 }
 
-.container{
-  margin-top: 40px;
+.programm{
+  background-color: #262626;
+  max-height: 100%;
+  max-width: 100%
 }
-
+ #avatar{
+  margin-top: 40px;
+ }
+ 
+.cells:hover{
+  background-color: #626262;
+}
